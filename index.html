@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>সাজিদের টেক ব্লগ - প্রযুক্তির গল্প বাংলায়</title>
+    <meta name="description" content="প্রযুক্তি নিয়ে বাংলায় লেখালেখি। মোবাইল, সফটওয়্যার, গ্যাজেট, এআই, প্রোগ্রামিং নিয়ে আপডেট থাকুন।">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Baloo+Da+2:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">
+                <i class="fas fa-code"></i>
+                সাজিদের টেক ব্লগ
+            </a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link active-link">হোম</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="blog.html" class="nav__link">ব্লগ</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">আমার সম্পর্কে</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+
+        </nav>
+    </header>
+
+    <!-- Main -->
+    <main class="main">
+        <!-- Hero Section -->
+        <section class="hero section">
+            <div class="hero__container container grid">
+                <div class="hero__content" data-aos="fade-right">
+                    <h1 class="hero__title">
+                        প্রযুক্তির জগতে <br>
+                        <span class="hero__title-color">স্বাগতম</span>
+                    </h1>
+                    <p class="hero__description">
+                        আমি সাজিদ। একজন সাংবাদিক হিসেবে প্রযুক্তি নিয়ে লেখালেখি করি। বাংলা ভাষায় প্রযুক্তির জটিল বিষয়গুলো সহজভাবে ব্যাখ্যা করার চেষ্টা করি।
+                    </p>
+                    <a href="blog.html" class="button button--flex">
+                        ব্লগ পড়ুন
+                        <i class="fas fa-arrow-right button__icon"></i>
+                    </a>
+                </div>
+                
+                <!-- <div class="hero__img" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Tech Illustration" class="hero__img-img">
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Featured Posts Section -->
+        <section class="featured section">
+            <div class="container">
+                <h2 class="section__title" data-aos="fade-up">জনপ্রিয় পোস্ট</h2>
+                <div class="featured__container grid" id="featured-posts">
+                    <!-- Featured posts will be loaded here -->
+                </div>
+                <div class="featured__button" data-aos="fade-up">
+                    <a href="blog.html" class="button button--flex">
+                        সব পোস্ট দেখুন
+                        <i class="fas fa-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="categories section">
+            <div class="container">
+                <h2 class="section__title" data-aos="fade-up">ক্যাটাগরি</h2>
+                <div class="categories__container grid" data-aos="fade-up">
+                    <div class="category__card" data-category="মোবাইল">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>মোবাইল</h3>
+                        <p>স্মার্টফোন ও মোবাইল টেকনোলজি</p>
+                    </div>
+                    <div class="category__card" data-category="সফটওয়্যার">
+                        <i class="fas fa-laptop-code"></i>
+                        <h3>সফটওয়্যার</h3>
+                        <p>সফটওয়্যার ও অ্যাপ্লিকেশন</p>
+                    </div>
+                    <div class="category__card" data-category="গ্যাজেট">
+                        <i class="fas fa-headphones"></i>
+                        <h3>গ্যাজেট</h3>
+                        <p>নতুন গ্যাজেট ও হার্ডওয়্যার</p>
+                    </div>
+                    <div class="category__card" data-category="এআই">
+                        <i class="fas fa-robot"></i>
+                        <h3>এআই</h3>
+                        <p>আর্টিফিশিয়াল ইন্টেলিজেন্স</p>
+                    </div>
+                    <div class="category__card" data-category="প্রোগ্রামিং">
+                        <i class="fas fa-code"></i>
+                        <h3>প্রোগ্রামিং</h3>
+                        <p>কোডিং ও ডেভেলপমেন্ট</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <div class="footer__content">
+                <h3 class="footer__title">সাজিদের টেক ব্লগ</h3>
+                <p class="footer__description">
+                    "প্রযুক্তি মানুষের জীবন সহজ করে, কিন্তু মানুষই প্রযুক্তিকে অর্থবহ করে।"
+                </p>
+            </div>
+            
+            <div class="footer__social">
+                <a href="#" class="footer__social-link">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="footer__social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="footer__social-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a href="#" class="footer__social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer__copy">
+            <div class="footer__copy-container container">
+                <p class="footer__copy-text">
+                    © ২০২৪ সাজিদের টেক ব্লগ। সব অধিকার সংরক্ষিত।
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
